@@ -17,7 +17,7 @@ const Home = () => {
             >
                 <div className="order-2 md:order-1 text-left md:w-1/2 mb-8 md:mb-0">
                     <h1 className="text-6xl font-bold mb-4">Hello, World! <span role="img" aria-label="wave">👋</span></h1>
-                    <h2 className="text-4xl font-bold mb-4">I'M <span className="text-blue-500">JOEL PAYIPPARA SHIBU</span></h2>
+                    <h2 className="text-4xl font-bold mb-4">I'M <span className="text-blue-500">JOEL SHIBU</span></h2>
                     <h3 className="text-2xl font-semibold mb-4">
                         <Typewriter
                             words={['Software Engineer', 'Freelancer', 'Tech Enthusiast', 'MERN Stack Developer']}

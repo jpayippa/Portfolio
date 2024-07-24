@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-2 w-full absolute bottom-0">
       <div className="container mx-auto flex justify-between items-center text-sm">
-        <p className="m-0 text-center">Designed and Developed by Joel</p>
+        <p className="m-0 text-center">Developed by Joel</p>
         <p>Copyright © {year} jps</p>
         <div className="flex space-x-4">
           <a href="https://github.com/jpayippa" className="text-white hover:text-gray-400">
