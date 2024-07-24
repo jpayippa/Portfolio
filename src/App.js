@@ -1,48 +1,22 @@
-import React, { useState, useEffect } from "react";
-import Preloader from "../src/Pages/Pre";
-import Navbar from "./Pages/Navbar";
-import Home from "./Pages/Home/Home";
-import About from "./Pages/About/About";
-import Projects from "./Pages/Projects/Projects";
-import Footer from "./Pages/Footer";
-import Resume from "./Pages/Resume/ResumeNew";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
-} from "react-router-dom";
-import ScrollToTop from "./Pages/ScrollToTop";
-import "./style.css";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home/Home';
+import About from './Pages/About/About';
+import Projects from './Pages/Projects/Projects';
+// import Resume from './Pages/Resume/Resume';
+import Layout from './components/Layout';
 
 function App() {
-  const [load, upadateLoad] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <Router>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
+      <Layout>
+      <Routes>
+      <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
-        </Routes>
-        <Footer />
-      </div>
+          <Route path="/projects" element={<Projects />} />
+          {/* <Route path="/resume" element={<Resume />} /> */}
+          </Routes>
+      </Layout>
     </Router>
   );
 }
