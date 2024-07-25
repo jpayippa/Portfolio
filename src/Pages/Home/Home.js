@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillGithub, AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai';
+import { AiFillGithub, AiOutlineX, AiFillInstagram } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
@@ -75,9 +75,9 @@ const Home = () => {
                                 <p className="mb-4">Connect with me on:</p>
                                 <div className="flex space-x-4 justify-center md:justify-start">
                                     <a href="https://github.com/jpayippa" className="text-white hover:text-gray-400"><AiFillGithub size={25} /></a>
-                                    <a href="https://x.com/joel_p_s_" className="text-white hover:text-gray-400"><AiOutlineTwitter size={25} /></a>
                                     <a href="https://www.linkedin.com/in/joel-payippara-shibu/" className="text-white hover:text-gray-400"><FaLinkedinIn size={25} /></a>
                                     <a href="https://www.instagram.com/joel_ps_/" className="text-white hover:text-gray-400"><AiFillInstagram size={25} /></a>
+                                    <a href="https://x.com/joel_p_s_" className="text-white hover:text-gray-400"><AiOutlineX size={25} /></a>
                                 </div>
                             </div>
                         </div>

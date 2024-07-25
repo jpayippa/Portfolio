@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram } from 'react-icons/ai';
+import { AiFillGithub, AiFillInstagram, AiOutlineX } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 
 function Footer() {
@@ -18,6 +18,9 @@ function Footer() {
           </a>
           <a href="https://www.instagram.com/joel_ps_/" className="text-white hover:text-gray-400">
             <AiFillInstagram size={20} />
+          </a>
+          <a href="https://x.com/joel_p_s_" className="text-white hover:text-gray-400">
+            <AiOutlineX size={20} />
           </a>
         </div>
       </div>
