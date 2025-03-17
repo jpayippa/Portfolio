@@ -4,7 +4,7 @@ import { SiJavascript, SiNextdotjs, SiAmazonaws, SiGithub, SiDjango, SiGoogleclo
 import { DiVisualstudio } from 'react-icons/di';
 import GitHubCalendar from 'react-github-calendar';
 import { motion } from 'framer-motion';
-import headshot from '../../Assets/headshot.png';
+import headshot from '../../Assets/headshot.JPEG';
 
 const About = () => {
     return (
