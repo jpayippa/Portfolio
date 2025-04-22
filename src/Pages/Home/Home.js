@@ -5,7 +5,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import HomeMain from '../../Assets/HomeMain.png'; // Replace with your illustration path
-import headshot from '../../Assets/headshot.png'; // Replace with your introduction image path
+import headshot from '../../Assets/headshot.JPEG'; // Replace with your introduction image path
 import { Helmet } from 'react-helmet';
 
 
