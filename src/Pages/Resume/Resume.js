@@ -1,11 +1,21 @@
 import React from 'react';
 import { FaDownload } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 
 const Resume = () => {
-    const resumeUrl = 'https://drive.google.com/file/d/10NsWPAkVhbi5XYeGfGmmF62VsKIuw69v/preview'; // Replace with your Google Drive or Firebase Storage link
+    const resumeUrl = 'https://drive.google.com/file/d/10NsWPAkVhbi5XYeGfGmmF62VsKIuw69v/preview';
 
     return (
         <div className="container mx-auto p-4 text-white">
+            <Helmet>
+                <title>Resume | Joel Shibu</title>
+                <meta name="description" content="View and download Joel Shibu's resume, highlighting experience in full-stack development, cloud tools, and software engineering." />
+                <link rel="canonical" href="https://joelps.dev/resume" />
+                <meta property="og:title" content="Joel Shibu's Resume" />
+                <meta property="og:description" content="Download my resume to see my education, skills, and past projects." />
+                <meta property="og:url" content="https://joelps.dev/resume" />
+            </Helmet>
+
             <section className="mb-16">
                 <h2 className="text-4xl font-bold mb-8 text-center">My Resume</h2>
                 <div className="vs-code-window bg-gray-800 rounded-lg shadow-lg flex-grow relative">

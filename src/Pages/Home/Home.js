@@ -6,10 +6,21 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import HomeMain from '../../Assets/HomeMain.png'; // Replace with your illustration path
 import headshot from '../../Assets/headshot.png'; // Replace with your introduction image path
+import { Helmet } from 'react-helmet';
+
 
 const Home = () => {
     return (
         <div className="container mx-auto p-4 text-white flex-grow flex flex-col justify-center items-center text-center">
+            <Helmet>
+            <title>Joel Shibu | Software Engineer & Developer</title>
+            <meta name="description" content="Welcome to Joel Shibu's portfolio. Explore my projects, skills, and experience in full-stack development and modern technologies." />
+            <link rel="canonical" href="https://joelps.dev/" />
+            <meta property="og:title" content="Joel Shibu | Software Engineer" />
+            <meta property="og:description" content="Discover my journey in software development, from C++ to MERN stack and AI." />
+            <meta property="og:url" content="https://joelps.dev/" />
+            </Helmet>
+
             <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}

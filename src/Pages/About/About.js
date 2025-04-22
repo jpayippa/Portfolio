@@ -5,10 +5,22 @@ import { DiVisualstudio } from 'react-icons/di';
 import GitHubCalendar from 'react-github-calendar';
 import { motion } from 'framer-motion';
 import headshot from '../../Assets/headshot.JPEG';
+import { Helmet } from 'react-helmet';
+
 
 const About = () => {
     return (
         <div className="container mx-auto p-4 text-white mb-16">
+
+        <Helmet>
+        <title>About Joel | Developer, Engineer, Creator</title>
+        <meta name="description" content="Learn more about Joel Shibu — a passionate software engineer studying at Western University with experience in React, Node.js, AI, and more." />
+        <link rel="canonical" href="https://joelps.dev/about" />
+        <meta property="og:title" content="About Joel Shibu" />
+        <meta property="og:description" content="Get to know my journey, skills, interests, and professional tools I use." />
+        <meta property="og:url" content="https://joelps.dev/about" />
+        </Helmet>
+
             {/* About Me Section */}
             <motion.section
                 initial={{ opacity: 0, x: -50 }}

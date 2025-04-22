@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { FaGithub } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 
 const Projects = () => {
     const [repos, setRepos] = useState([]);
@@ -19,6 +20,15 @@ const Projects = () => {
 
     return (
         <div className="container mx-auto p-4 text-white">
+            <Helmet>
+                <title>Projects | Joel Shibu</title>
+                <meta name="description" content="Browse Joel Shibu's software projects, including web apps and open-source contributions on GitHub." />
+                <link rel="canonical" href="https://joelps.dev/projects" />
+                <meta property="og:title" content="Projects by Joel Shibu" />
+                <meta property="og:description" content="Explore my GitHub repositories, deployed apps, and what I'm currently building." />
+                <meta property="og:url" content="https://joelps.dev/projects" />
+            </Helmet>
+
             <h2 className="text-4xl font-bold mb-8 text-center">My Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {repos.map(repo => (
