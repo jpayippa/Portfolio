@@ -24,12 +24,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "postbuild": "node -e \"if (!process.env.CI) require('react-snap')()\"",
-    "eject": "react-scripts eject"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "snap": "react-snap",
+  "postbuild": "node -e \"if (!process.env.CI) require('react-snap')()\"",
+  "eject": "react-scripts eject"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
