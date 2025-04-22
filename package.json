@@ -27,8 +27,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "postbuild": "react-snap --puppeteer-args='--no-sandbox'"
-,
+    "postbuild": "node -e \"if (!process.env.CI) require('react-snap')()\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
